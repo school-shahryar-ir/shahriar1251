@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>نمایشگاه مجازی شهدای دانش‌آموزی شهریار</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tahoma', sans-serif;
+      direction: rtl;
+      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+      background-size: 1000px 1000px;
+      animation: bgMove 30s linear infinite;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 0; }
+    }
+
+    header {
+      background-color: #880000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    .card {
+      width: 280px;
+      position: relative;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .frame {
+      background-image: url('ghab.jpg'); /* قاب ارسالی */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 280px;
+      height: 380px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .frame img {
+      width: 180px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      animation: pulse 5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .info {
+      margin-top: 10px;
+      background-color: rgba(255,255,255,0.9);
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 0.9em;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    نمایشگاه مجازی شهدای دانش‌آموزی و فرهنگی شهرستان شهریار
+  </header>
+
+  <div class="gallery">
+    <!-- کارت‌های شهدا -->
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/w364621______thumb.jpg" alt="شهید علی رضا باغ پرداز">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید علی رضا باغ پرداز<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۷/۰۱/۰۴<br>
+        <strong>تاریخ شهادت:</strong> ثبت نشده<br>
+        <strong>محل شهادت:</strong> ثبت نشده<br>
+        <strong>نام پدر:</strong> عزیزالله<br>
+        <strong>تحصیلات:</strong> کاردانی<br>
+        <strong>شغل:</strong> ثبت نشده
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/c914430____2_thumb.jpg" alt="شهید محمود قربانی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمود قربانی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۵/۰۷/۲۶<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۵/۱۱/۰۹<br>
+        <strong>محل شهادت:</strong> شلمچه<br>
+        <strong>نام پدر:</strong> موسی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> ثبت نشده
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/d514398____thumb.jpg" alt="شهید حسین مرادی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید حسین مرادی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۰۷/۰۱/۱۵<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۴/۱۲/۰۱<br>
+        <strong>محل شهادت:</strong> ثبت نشده<br>
+        <strong>نام پدر:</strong> محمد آقا<br>
+        <strong>تحصیلات:</strong> کاردانی<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/j68012____thumb.jpg" alt="شهید علیرضا خادمی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید علیرضا خادمی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۸/۰۶/۱۰<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۷/۰۷/۰۵<br>
+        <strong>محل شهادت:</strong> ثبت نشده<br>
+        <strong>نام پدر:</strong> عبدالهادی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/z514116______thumb.jpg" alt="شهید حمیدرضا زمان زاده">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید حمیدرضا زمان زاده<br>
+        <strong>تاریخ تولد:</strong> ۱۳۵۰/۰۴/۱۴<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۷/۰۵/۰۳<br>
+        <strong>محل شهادت:</strong> بوکان<br>
+        <strong>نام پدر:</strong> کامل<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/z99200____thumb.jpg" alt="شهید محمد طالبی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمد طالبی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۷/۰۱/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۷/۰۱/۰۶<br>
+        <strong>محل شهادت:</strong> خلیج<br>
+        <strong>نام پدر:</strong> قنبر علی<br>
+        <strong>تحصیلات:</strong> با مشخص<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/v658270____thumb.jpg" alt="شهید داود قشقایی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید داود قشقایی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۹/۰۳/۰۶<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۶/۰۱/۳۱<br>
+        <strong>محل شهادت:</strong> پاسگاه زید<br>
+        <strong>نام پدر:</strong> ابراهیم<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/k06741_____thumb.jpg" alt="شهید امیرحسین معماری">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید امیرحسین معماری<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۱۰/۱۲<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۳/۱۲/۲۲<br>
+        <strong>محل شهادت:</strong> شرق دجله<br>
+        <strong>نام پدر:</strong> احمد<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/j470347_____thumb.jpg" alt="شهید غلامرضا ملک محمدی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید غلامرضا ملک محمدی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۸/۰۱/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۷/۰۱/۰۶<br>
+        <strong>محل شهادت:</strong> بیاره<br>
+        <strong>نام پدر:</strong> علی اکبر<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/x42867_____2_thumb.jpg" alt="شهید علی رضا درخشان">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید علی رضا درخشان<br>
+        <strong>تاریخ تولد:</strong> ثبت نشده<br>
+        <strong>تاریخ شهادت:</strong> ثبت نشده<br>
+        <strong>محل شهادت:</strong> پاسگاه زید<br>
+        <strong>نام پدر:</strong> ثبت نشده<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/z129443_____thumb.jpg" alt="شهید سید جلال حسینی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید سید جلال حسینی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۳/۰۴/۱۹<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۱/۰۱/۰۲<br>
+        <strong>محل شهادت:</strong> دشت عباس<br>
+        <strong>نام پدر:</strong> جمال<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/c877527____thumb.jpg" alt="شهید پژمان بختیاری">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید پژمان بختیاری<br>
+        <strong>تاریخ تولد:</strong> ۱۳۵۰/۱۲/۱۰<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۷/۰۵/۰۴<br>
+        <strong>محل شهادت:</strong> محور اهواز خرمشهر<br>
+        <strong>نام پدر:</strong> رمضانعلی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/e87721____thumb.jpg" alt="شهید محمد تاجیک">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمد تاجیک<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۶/۱۱/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۲/۰۸/۲۹<br>
+        <strong>محل شهادت:</strong> پنجوین<br>
+        <strong>نام پدر:</strong> نورالله<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/u851067_____thumb.jpg" alt="شهید احمد شمسی پور">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید احمد شمسی پور<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۱/۰۶/۰۷<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۱/۰۷/۱۳<br>
+        <strong>محل شهادت:</strong> سومار<br>
+        <strong>نام پدر:</strong> علی اکبر<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/k783832_____thumb.jpg" alt="شهید غلام حسین بیابانی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید غلام حسین بیابانی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۷/۰۳/۱۰<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۳/۰۱/۱۴<br>
+        <strong>محل شهادت:</strong> رودخانه دزفول<br>
+        <strong>نام پدر:</strong> علی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/j53856_____thumb.jpg" alt="شهید اکبر رشکوییه">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید اکبر رشکوییه<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۵/۰۲/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۲/۱۲/۱۱<br>
+        <strong>محل شهادت:</strong> محنون<br>
+        <strong>نام پدر:</strong> غلامرضا<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/z747365____thumb.jpg" alt="شهید محمد عربی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمد عربی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۰۶/۰۵<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۳/۱۲/۲۲<br>
+        <strong>محل شهادت:</strong> شرق دجله<br>
+        <strong>نام پدر:</strong> رضا<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/a624520____thumb.jpg" alt="شهید حسن مجیدی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید حسن مجیدی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۶/۰۷/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۳/۱۲/۲۲<br>
+        <strong>محل شهادت:</strong> ثبت نشده<br>
+        <strong>نام پدر:</strong> ترابعلی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/q16539____thumb.jpg" alt="شهید کمال تاجیک">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید کمال تاجیک<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۰۳/۰۲<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۴/۱۲/۲۷<br>
+        <strong>محل شهادت:</strong> فاو<br>
+        <strong>نام پدر:</strong> ابراهیم<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/h41737_____thumb.jpg" alt="شهید محمد مرادخانی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمد مرادخانی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۰۳/۲۰<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۴/۱۲/۰۱<br>
+        <strong>محل شهادت:</strong> فاو<br>
+        <strong>نام پدر:</strong> قدرت‌الله<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/d650413____thumb.jpg" alt="شهید مرتضی اسلامی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید مرتضی اسلامی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۵/۰۱/۰۳<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۴/۱۱/۳۱<br>
+        <strong>محل شهادت:</strong> اروندرود<br>
+        <strong>نام پدر:</strong> یونس<br>
+        <strong>تحصیلات:</strong> کارشناسی<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/a06740____thumb.jpg" alt="شهید علی بختیاری">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید علی بختیاری<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۷/۰۱/۱۹<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۵/۱۰/۲۹<br>
+        <strong>محل شهادت:</strong> پاسگاه زید<br>
+        <strong>نام پدر:</strong> رشید<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/w51946_____thumb.jpg" alt="شهید عباس پناه دار">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید عباس پناه دار<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۰۱/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۵/۰۴/۱۰<br>
+        <strong>محل شهادت:</strong> قلاویزان<br>
+        <strong>نام پدر:</strong> جمال<br>
+        <strong>تحصیلات:</strong> کاردانی<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/b230723____thumb.jpg" alt="شهید حمیدرضا شریفی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید حمیدرضا شریفی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۷/۰۴/۱۵<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۴/۱۱/۲۴<br>
+        <strong>محل شهادت:</strong> فاو<br>
+        <strong>نام پدر:</strong> مهدی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/q40051____thumb.jpg" alt="شهید ابوالفضل کریمی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید ابوالفضل کریمی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۷/۰۳/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۵/۰۶/۱۰<br>
+        <strong>محل شهادت:</strong> حاج عمران<br>
+        <strong>نام پدر:</strong> مرتضی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/v8680______thumb.jpg" alt="شهید شعبان اعتمادی خسروشاهی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید شعبان اعتمادی خسروشاهی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۹/۰۶/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۶/۱۱/۰۱<br>
+        <strong>محل شهادت:</strong> اهواز<br>
+        <strong>نام پدر:</strong> محمد حسن<br>
+        <strong>تحصیلات:</strong> تا مشخص<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/i642031____2_thumb.jpg" alt="شهید محمد فلاح">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمد فلاح<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۹/۰۲/۰۳<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۵/۱۰/۲۱<br>
+        <strong>محل شهادت:</strong> پاسگاه زید<br>
+        <strong>نام پدر:</strong> ابراهیم<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/w518608____thumb.jpg" alt="شهید حمید هوشمندی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید حمید هوشمندی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۷/۰۶/۳۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۵/۰۴/۲۰<br>
+        <strong>محل شهادت:</strong> قلاویزان<br>
+        <strong>نام پدر:</strong> علی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/h436844______thumb.jpg" alt="شهید داود نظر حسین صابر">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید داود نظر حسین صابر<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۸/۱۱/۰۸<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۵/۱۲/۱۰<br>
+        <strong>محل شهادت:</strong> پاسگاه زید<br>
+        <strong>نام پدر:</strong> جواد<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/y209864____2_thumb.jpg" alt="شهید محسن نوروزی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محسن نوروزی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۸/۰۳/۲۰<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۵/۰۴/۱۰<br>
+        <strong>محل شهادت:</strong> قلاویزان<br>
+        <strong>نام پدر:</strong> علی خان<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/v908800____2_thumb.jpg" alt="شهید مصطفی آواره">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید مصطفی آواره<br>
+        <strong>تاریخ تولد:</strong> ۱۳۳۳/۰۴/۰۲<br>
+        <strong>تاریخ شهادت:</strong> ثبت نشده<br>
+        <strong>محل شهادت:</strong> ثبت نشده<br>
+        <strong>نام پدر:</strong> ولی<br>
+        <strong>تحصیلات:</strong> تا مشخص<br>
+        <strong>شغل:</strong> ثبت نشده
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/a268787____thumb.jpg" alt="شهید سیاوش عبدالملکی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید سیاوش عبدالملکی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۱/۰۵/۲۴<br>
+        <strong>تاریخ شهادت:</strong> ثبت نشده<br>
+        <strong>محل شهادت:</strong> ثبت نشده<br>
+        <strong>نام پدر:</strong> حسن<br>
+        <strong>تحصیلات:</strong> تا مشخص<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/f422688_____thumb.jpg" alt="شهید حمید حبیبی نیا">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید حمید حبیبی نیا<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۹/۰۲/۱۰<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۶/۰۲/۰۱<br>
+        <strong>محل شهادت:</strong> بانه<br>
+        <strong>نام پدر:</strong> محمد علی<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/m987____thumb.jpg" alt="شهید حمید تقوی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید حمید تقوی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۷/۰۳/۲۶<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۶/۰۴/۱۴<br>
+        <strong>محل شهادت:</strong> مانوت<br>
+        <strong>نام پدر:</strong> حبیب‌الله<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/c531747_____thumb.jpg" alt="شهید سید حسین شاه میری">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید سید حسین شاه میری<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۸/۰۵/۱۰<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۶/۱۱/۰۱<br>
+        <strong>محل شهادت:</strong> ماووت<br>
+        <strong>نام پدر:</strong> سید مجتبی<br>
+        <strong>تحصیلات:</strong> تا مشخص<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/g059562____thumb.jpg" alt="شهید مجتبی چراغی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید مجتبی چراغی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۰۸/۱۶<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۱/۰۲/۳۱<br>
+        <strong>محل شهادت:</strong> پاسگاه زید<br>
+        <strong>نام پدر:</strong> احمد<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/h903681____2_thumb.jpg" alt="شهید محمود رهنما">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمود رهنما<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۲/۰۸/۰۹<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۱/۰۷/۱۳<br>
+        <strong>محل شهادت:</strong> سومار<br>
+        <strong>نام پدر:</strong> حبیب‌الله<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/q168833____thumb.jpg" alt="شهید محمد رضایی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمد رضایی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۱۱/۱۰<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۱/۰۲/۱۰<br>
+        <strong>محل شهادت:</strong> خرمشهر<br>
+        <strong>نام پدر:</strong> ذبیح‌الله<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/h59991____thumb.jpg" alt="شهید مرتضی رسولی">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید مرتضی رسولی<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۳/۰۱/۰۱<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۱/۰۱/۱۰<br>
+        <strong>محل شهادت:</strong> شوش<br>
+        <strong>نام پدر:</strong> محمد<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/g589331_____thumb.jpg" alt="شهید اکبر رنجبر چوبه">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید اکبر رنجبر چوبه<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۰۲/۲۲<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۱/۰۵/۰۸<br>
+        <strong>محل شهادت:</strong> مریوان<br>
+        <strong>نام پدر:</strong> محمدرضا<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/t03352_____2_thumb.jpg" alt="شهید محمود قدرتی کمال">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید محمود قدرتی کمال<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۳/۰۳/۲۵<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۰/۱۲/۲۶<br>
+        <strong>محل شهادت:</strong> دشت عباس<br>
+        <strong>نام پدر:</strong> عبدالعظیم<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="frame">
+        <img src="https://cdn.imgurl.ir/uploads/i196668____thumb.jpg" alt="شهید احمد بیات">
+      </div>
+      <div class="info">
+        <strong>نام:</strong> شهید احمد بیات<br>
+        <strong>تاریخ تولد:</strong> ۱۳۴۴/۰۱/۰۲<br>
+        <strong>تاریخ شهادت:</strong> ۱۳۶۱/۰۱/۰۷<br>
+        <strong>محل شهادت:</strong> گرچه<br>
+        <strong>نام پدر:</strong> علی اکبر<br>
+        <strong>تحصیلات:</strong> دیپلم<br>
+        <strong>شغل:</strong> دانش‌آموز
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    طراحی و اجرا: کارشناسی امور شاهد و ایثارگران و طرح پراکنده اداره آموزش و پرورش شهرستان شهریار
+  </footer>
+</body>
+</html>
